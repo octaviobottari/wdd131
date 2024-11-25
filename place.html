@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Information 1 about Buenos Aires.">
+    <title>Buenos Aires - Weather</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Buenos Aires</h1>
+    </header>
+
+    <section class="hero">
+        <img src="images/buenos-aires-small.jpg" 
+             srcset="images/buenos-aires-large.jpg 1200w, 
+                     images/buenos-aires-medium.jpg 800w, 
+                     images/buenos-aires-small.jpg 600w" 
+             sizes="100vw" 
+             alt="Skyline of Buenos Aires at sunset">
+             <div class="data-box">
+              <h2>Data</h2>
+              <p><span>Area:</span> 202,4 km²</p>
+              <p><span>Population:</span> 3,120,612</p>
+              <p><span>Languages:</span> Good Spanish</p>
+              <p><span>Currency:</span> Peso Argentino</p>
+              <p><span>Time Zone:</span> GMT-3</p>
+              <p><span>Calling Code:</span> +54 11</p>
+              <p><span>Internet TLD:</span> .ar</p>
+          </div>
+          
+          <div class="weather-box">
+              <h2>Weather<img src="images/weather.svg" alt="Weather Icon" class="weather-icon"></h2>
+              <p><span>Temperature:</span> 20°C</p>
+              <p><span>Condition:</span> Sunny</p>
+              <p><span>Wind Speed:</span> 10 km/h</p>
+              <p><span>Wind Chill:</span><span id="windChill"></span>
+          </div>
+          
+    </section>
+    <footer>
+      <p>&copy; 2024 Octavio Bottari, Buenos Aires, Argentina</p>
+      <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+    
+</body>
+
+</html>
