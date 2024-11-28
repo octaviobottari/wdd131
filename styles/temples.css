@@ -1,35 +1,60 @@
+:root {
+  /* Colors */
+  --primary-bg-color: #fdfdfd;
+  --header-bg-color: #a39d6f;
+  --footer-bg-color: #222;
+  --footer-text-color: #fff;
+  --link-hover-color: #000;
+  --text-color: #333;
+  --border-color: #ddd;
+  --highlight-color: #a39d6f;
+  
+  /* Font Sizes */
+  --font-size-base: 1rem;
+  --font-size-large: 1.5rem;
+  --font-size-small: 0.8rem;
+  
+  /* Spacing */
+  --padding-small: 0.5rem;
+  --padding-medium: 1rem;
+  --padding-large: 2rem;
+  
+  /* Card Styles */
+  --card-bg-color: #fff;
+  --card-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
 html, body {
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
-  font-size: 12px;
   overflow-x: hidden; 
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: Cinzel, "Times New Roman", Georgia, serif;
   line-height: 1.4;
-  background-color: #fdfdfd; 
+  background-color: var(--primary-bg-color); 
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 1rem;
-  background-color: #00bbff;
+  padding: var(--padding-small) var(--padding-medium);
+  background-color: var(--header-bg-color);
   position: relative;
   z-index: 1;
 }
 
-header h2{
-  color: #fff;
+header h2 {
+  color: var(--footer-text-color);
 }
 
 nav .hamburger {
-  display: block; 
+  display: block;
   background: none;
   border: none;
   font-size: 1.5rem;
@@ -37,14 +62,14 @@ nav .hamburger {
 }
 
 nav .menu {
-  display: none; 
+  display: none;
   flex-direction: column;
   list-style: none;
   padding: 0;
   margin: 0;
-  position: static; 
-  background: none; 
-  box-shadow: none; 
+  position: static;
+  background: none;
+  box-shadow: none;
 }
 
 nav .menu.active {
@@ -52,38 +77,39 @@ nav .menu.active {
   position: absolute;
   top: 30px;
   right: 1rem;
-  background-color: #00bbff;
-  padding: 1rem;
+  background-color: var(--header-bg-color);
+  padding: var(--padding-medium);
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   flex-direction: column;
 }
 
 nav .menu li {
-  margin: 0.5rem 0;
+  padding: 10px;
+  text-align: center;
 }
 
 nav .menu a {
   text-decoration: none;
-  color: #ffffff;
+  color: var(--footer-text-color);
   font-weight: bold;
-  font-size: 0.8rem;
+  font-size: var(--font-size-small);
   text-align: center;
   transition: color 0.3s ease;
 }
 
-.title {
-  font-size: 1.2rem;
+nav .menu a:hover {
+  color: var(--link-hover-color);
 }
 
-nav .menu a:hover {
-  color: #000000;
+.title {
+  font-size: var(--font-size-large);
 }
 
 main {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: var(--padding-medium);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -92,7 +118,7 @@ main {
 main h2 {
   text-align: center;
   margin-bottom: 1rem;
-  font-size: 1.5rem;
+  font-size: var(--font-size-large);
 }
 
 .gallery {
@@ -102,6 +128,7 @@ main h2 {
   padding: 0.5rem; 
   width: 100%;
   justify-items: center;
+  font-size: 12px;
 }
 
 .gallery img {
@@ -119,7 +146,7 @@ figure {
 figure img {
   max-width: 200px;
   height: auto;
-  border: 2px solid #ddd;
+  border: 2px solid var(--border-color);
   border-radius: 5px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -137,8 +164,67 @@ figcaption {
 
 footer {
   text-align: center;
-  background-color: #222;
-  color: #fff;
-  padding: 1rem;
+  background-color: var(--footer-bg-color);
+  color: var(--footer-text-color);
+  padding: var(--padding-medium);
   font-size: 0.9rem;
+  border-top: 3px solid var(--highlight-color);
+}
+
+.temple-card {
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: var(--card-shadow);
+  background-color: var(--card-bg-color);
+  margin: 10px;
+}
+
+.temple-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.temple-card h3 {
+  font-size: var(--font-size-small);
+  color: var(--text-color);
+}
+
+.temple-card p {
+  font-size: 0.75rem;
+  color: var(--text-color);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.banner {
+  background-image: url('https://churchofjesuschristtemples.org/assets/img/salt-lake-temple-knobs.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white; 
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.banner h1, .banner h3 {
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+}
+
+@media (max-width: 600px) {
+  .temple-card {
+    margin: 5px;
+  }
 }

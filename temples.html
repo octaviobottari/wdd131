@@ -3,66 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Temple Album</title>
+  <title>Filtered Temple Album - Octavio Bottari</title>
   <link rel="stylesheet" href="styles/temples.css">
   <link rel="stylesheet" href="styles/temples-large.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
   <script src="scripts/temples.js" defer></script>
 </head>
 <body>
   <header>
     <h2>Temple Album</h2>
     <nav>
-      <button class="hamburger" aria-label="Menu">&#9776;</button>
+      <button class="hamburger" id="hamburgerIcon" aria-label="Menu">&#9776;</button>
       <ul class="menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Old</a></li>
-        <li><a href="#">New</a></li>
-        <li><a href="#">Large</a></li>
-        <li><a href="#">Small</a></li>
+        <li><a href="#" id="homeBtn">Home</a></li>
+        <li><a href="#" id="oldBtn">Old</a></li>
+        <li><a href="#" id="newBtn">New</a></li>
+        <li><a href="#" id="largeBtn">Large</a></li>
+        <li><a href="#" id="smallBtn">Small</a></li>
       </ul>
     </nav>
   </header>
   <main>
-    <h2>Temple Pictures</h2>
-    <div class="gallery">
-      <figure>
-        <img src="images/buenosaires.jpeg" alt="Buenos Aires">
-        <figcaption>Buenos Aires Temple</figcaption>
-      </figure>
-      <figure>
-        <img src="images/cordoba.jpeg" alt="Cordoba">
-        <figcaption>Cordoba Temple</figcaption>
-      </figure>
-      <figure>
-        <img src="images/montevideo.jpeg" alt="Montevideo">
-        <figcaption>Montevideo Temple</figcaption>
-      </figure>
-      <figure>
-        <img src="images/idahofalls.jpg" alt="Idaho Falls">
-        <figcaption>Idaho Falls Temple</figcaption>
-      </figure>
-      <figure>
-        <img src="images/rexburg.jpg" alt="Rexburg">
-        <figcaption>Rexburg Temple</figcaption>
-      </figure>
-      <figure>
-        <img src="images/pocatello.jpg" alt="Pocatello">
-        <figcaption>Pocatello Temple</figcaption>
-      </figure>
-      <figure>
-        <img src="images/boise.jpg" alt="Boise">
-        <figcaption>Boise Temple</figcaption>
-      </figure>
-      <figure>
-        <img src="images/saltlakecity.jpeg" alt="Salt Lake City">
-        <figcaption>Salt Lake City Temple</figcaption>
-      </figure>
-      <figure>
-        <img src="images/rome.jpg" alt="Rome">
-        <figcaption>Rome Temple</figcaption>
-      </figure>
+    <div class="banner">
+      <h1>Temples of The Church of Jesus Christ of Latter-day Saints</h1>
+      <h3>Temples</h3>
     </div>
+    <div id="templeGallery" class="gallery"></div>
   </main>
   <footer>
     <p>&copy; <span id="year"></span> Octavio Bottari. Last Modified: <span id="modified"></span></p>
