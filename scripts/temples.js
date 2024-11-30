@@ -77,6 +77,16 @@ const temples = [
     area: 41010,
     imageUrl:
       "https://churchofjesuschristtemples.org/assets/img/temples/rome-italy-temple/rome-italy-temple-2642-main.jpg"
+  },
+
+
+  {
+    templeName: "Buenos Aires",
+    location: "Buenos Aires, Argentina",
+    dedicated: "1986, January, 17",
+    area: 30659,
+    imageUrl:
+      "https://churchofjesuschristtemples.org/assets/img/temples/buenos-aires-argentina-temple/buenos-aires-argentina-temple-4087-main.jpg"
   }
 ];
 
