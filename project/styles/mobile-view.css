@@ -1,0 +1,79 @@
+@media only screen and (max-width: 768px) {
+    /*  */
+    header {
+        text-align: center;
+        padding: 1rem 1.5rem;  
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin-left: 0;
+        margin-bottom: 1rem; 
+    }
+
+
+    .hero {
+        flex-direction: column;  
+        padding: 3rem 1.5rem;  
+    }
+
+    .hero-content {
+        max-width: 100%; 
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2rem;  
+    }
+
+    .hero p {
+        font-size: 1rem; 
+        margin-bottom: 1rem;  
+    }
+
+    .cta-buttons {
+        flex-direction: column;  
+        gap: 0.5rem;  
+    }
+
+    .hero-image .placeholder-image {
+        background-image: url(../images/hero-image.jpg);       
+        background-size: cover;  
+        background-position: center;
+        border-radius: 8px;
+        margin-top: 2rem;  
+        min-height: 200px;  
+        display: block; 
+    }
+}
+
+
+    .testimonials {
+        display: block; 
+        padding: 2rem 1.5rem;  
+    }
+
+    .testimonial-card {
+        max-width: 100%; 
+        margin-bottom: 1.5rem;  
+    }
+
+    .testimonial-card h3 {
+        font-size: 1rem; 
+        margin-bottom: 0.3rem;
+    }
+
+    .testimonial-card p {
+        font-size: 0.9rem;  
+    }
+
+ 
+    footer {
+        font-size: 0.8rem;  
+        padding: 1rem;
+    }
+

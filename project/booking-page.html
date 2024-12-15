@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Page - CanchasApp</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/mobile-view.css" media="only screen and (max-width: 768px)">
+    <script src="scripts/scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="logo"><span style="color: #226f54;">Canchas</span>App</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="field-listings.html">Field Listings</a></li>
+                <li><a href="booking-page.html">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Book Your Soccer Field</h1>
+        <form id="booking-form" action="#" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+            
+            <label for="field">Choose a Field:</label>
+            <select id="field" name="field">
+                <option value="soccer-field-1">Soccer Field 1</option>
+                <option value="soccer-field-2">Soccer Field 2</option>
+            </select>
+            
+            <label for="date">Select Date:</label>
+            <input type="date" id="date" name="date">
+            
+            <label for="time">Select Time:</label>
+            <input type="time" id="time" name="time">
+            
+            <button type="submit">Book Now</button>
+        </form>
+        
+        <!-- Booking Table -->
+        <h2>Your Bookings</h2>
+        <table class="booking-table" id="booking-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Field</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dynamic content will be here -->
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <p>&copy; 2024 CanchasApp. All rights reserved. | <a href="#">Terms of Service</a></p>
+    </footer>
+</body>
+</html>
